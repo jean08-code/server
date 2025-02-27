@@ -35,7 +35,8 @@
     <button onclick="sendMessage()">Send</button>
 
     <script>
-        const socket = io("http://localhost:5000");
+        // Connect to your backend
+        const socket = io("https://server-ss59.onrender.com");
 
         socket.on("receive_message", (data) => {
             const chatBox = document.getElementById("chat-box");
